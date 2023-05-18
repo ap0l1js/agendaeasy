@@ -18,9 +18,6 @@ export default async function handler(
     },
   });
 
-  // eslint-disable-next-line no-console
-  console.log('userExists: ', userExists);
-
   if (userExists) {
     return res.status(400).json({
       message: 'Username already exists.',
